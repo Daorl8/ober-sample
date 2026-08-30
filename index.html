@@ -32,7 +32,7 @@
 :root{
  --paper:#ffffff; --paper2:#F6F5F2; --ink:#141414; --ink2:#6C6A66; --faint:#A8A5A0;
  --line:#E7E4DE; --line2:#D8D4CC;
- --serif:'Fraunces','Apple SD Gothic Neo',Georgia,serif;
+ --serif:'Fraunces','Pretendard Variable',Pretendard,'Apple SD Gothic Neo',Georgia,serif;
  --disp:'Inter','Pretendard Variable',system-ui,-apple-system,sans-serif;
  --body:'Inter','Pretendard Variable',Pretendard,system-ui,-apple-system,sans-serif;
  --kr:'Pretendard Variable',Pretendard,system-ui,sans-serif;
@@ -192,6 +192,7 @@ footer{background:#141414;color:#fff;padding:clamp(56px,8vw,100px) 0 40px}
  html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
  html.js .rv.in{opacity:1;transform:none}
 }
+@media (prefers-reduced-motion:reduce){html.js .rv{opacity:1!important;transform:none!important;transition:none!important}}
 
 /* responsive */
 @media (max-width:860px){
@@ -439,7 +440,6 @@ footer a:focus-visible,.drawer a:focus-visible,.spread a:focus-visible{outline-c
   </div>
 </footer>
 
-<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
 <script>
 (function(){
   var hdr=document.getElementById('hdr'),tick=false;
