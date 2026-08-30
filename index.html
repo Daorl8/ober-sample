@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>obe.r — ceramic studio</title>
+<meta name="description" content="obe.r is a ceramic studio making colourful, handmade tableware. One-day classes, an online shop, and pieces coloured by the everyday.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="obe.r — ceramic studio">
+<meta property="og:description" content="Colourful handmade ceramics, one-day classes, and an online shop.">
+<meta property="og:image" content="https://ober-sample.lgt3232.workers.dev/og-ober.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://ober-sample.lgt3232.workers.dev/">
+<meta property="og:site_name" content="obe.r">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ober-sample.lgt3232.workers.dev/og-ober.jpg">
+<link rel="canonical" href="https://ober-sample.lgt3232.workers.dev/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"obe.r","alternateName":"오버 세라믹","description":"Ceramic studio making colourful handmade tableware, with one-day classes and an online shop.","image":"https://ober-sample.lgt3232.workers.dev/ober-hero.webp","url":"https://ober-sample.lgt3232.workers.dev/","telephone":"+82-507-1427-9666","address":{"@type":"PostalAddress","streetAddress":"동탄하나3길 7-4 1층","addressLocality":"화성시","addressRegion":"경기도","addressCountry":"KR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"10:30","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"10:00","closes":"16:00"}],"makesOffer":"Handmade ceramics, pottery classes","sameAs":["https://www.instagram.com/obe.r_official/","https://smartstore.naver.com/o_ber"]}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --paper:#ffffff; --paper2:#F6F5F2; --ink:#141414; --ink2:#6C6A66; --faint:#A8A5A0;
+ --line:#E7E4DE; --line2:#D8D4CC;
+ --disp:'Work Sans','Apple SD Gothic Neo',sans-serif;
+ --body:'Inter','Pretendard Variable',Pretendard,system-ui,-apple-system,sans-serif;
+ --kr:'Pretendard Variable',Pretendard,system-ui,sans-serif;
+ --bar:66px; --ease:cubic-bezier(.22,.61,.36,1);
+}
+html{color-scheme:light;-webkit-text-size-adjust:100%;scroll-behavior:auto;scroll-padding-top:80px;overflow-x:hidden}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 32px;position:relative}
+section{position:relative}
+::selection{background:#141414;color:#fff}
+h1,h2,h3{font-family:var(--disp);font-weight:400;letter-spacing:-.01em;line-height:1.04}
+
+/* label */
+.lab{font-family:var(--disp);font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
+.lab .no{color:var(--faint);margin-right:12px}
+.muted{color:var(--ink2)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--disp);font-weight:500;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:14px 26px;border-radius:0;transition:background .25s,color .25s,border-color .25s,transform .18s var(--ease)}
+.btn-fill{background:#141414;color:#fff}
+.btn-fill:hover{transform:translateY(-2px)}
+.btn-ol{background:transparent;color:#141414;border:1px solid var(--line2)}
+.btn-ol:hover{border-color:#141414}
+.btn svg{width:14px;height:14px}
+.arrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--disp);font-size:.78rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:3px;transition:gap .2s var(--ease)}
+.arrow:hover{gap:14px}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .35s var(--ease),border-color .35s}
+.hdr-in{height:var(--bar);display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto}
+.brand{font-family:var(--disp);font-weight:500;font-size:1.3rem;letter-spacing:.01em;color:var(--ink)}
+.nav-r{display:flex;align-items:center;gap:30px}
+.nav-lnk{display:flex;gap:28px}
+.nav-lnk a{font-family:var(--disp);font-size:.76rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);opacity:.8;transition:opacity .2s}
+.nav-lnk a:hover{opacity:1}
+.ig-link{font-family:var(--disp);font-size:.76rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);opacity:.8;transition:opacity .2s}
+.ig-link:hover{opacity:1}
+@media (max-width:860px){.ig-link{display:none}}
+.hdr.scrolled{background:rgba(255,255,255,.92);border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2)}
+.burger{display:none;flex-direction:column;gap:5px;width:28px;height:28px;justify-content:center;align-items:center;background:none;border:0;cursor:pointer;padding:0}
+.burger span{display:block;width:22px;height:1.5px;background:var(--ink);transition:.3s}
+
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:70;background:#141414;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.drawer.open{opacity:1;visibility:visible}
+.drawer a{font-family:var(--disp);font-weight:300;font-size:2rem;letter-spacing:.01em;padding:10px}
+.drawer .dx{position:absolute;top:20px;right:26px;font-size:2rem;background:none;border:0;color:#fff;cursor:pointer;line-height:1}
+.drawer .dsoc{margin-top:22px;display:flex;gap:20px}
+.drawer .dsoc a{font-family:var(--body);font-size:.9rem;font-weight:400;opacity:.85}
+
+/* ---------- hero ---------- */
+.hero{padding:calc(var(--bar) + 40px) 0 0}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-bottom:34px;border-bottom:1px solid var(--line)}
+.hero-top .idx{font-family:var(--disp);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+.hero h1{font-family:var(--disp);font-weight:300;font-size:clamp(3rem,11vw,9rem);line-height:.9;letter-spacing:-.03em}
+.hero h1 em{font-style:italic;font-weight:400}
+.hero-sub{font-family:var(--disp);font-weight:400;font-size:clamp(1rem,2vw,1.35rem);color:var(--ink);max-width:340px;text-align:right;line-height:1.35}
+.hero-media{margin-top:34px;display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(14px,2vw,28px);align-items:end}
+.hero-media figure{overflow:hidden;background:var(--paper2)}
+.hero-media .big{aspect-ratio:16/10}
+.hero-media .small{aspect-ratio:4/5}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-cap{margin-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--disp);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2)}
+
+/* ---------- section frame ---------- */
+.sec{padding:clamp(72px,11vw,150px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.sec-head h2{font-family:var(--disp);font-weight:300;font-size:clamp(2rem,5.5vw,3.8rem);letter-spacing:-.02em;line-height:1}
+.sec-head h2 em{font-style:italic;font-weight:400}
+.sec-head .rt{max-width:360px;font-size:.98rem;color:var(--ink2);line-height:1.7}
+
+/* magazine grid */
+.mag{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.6vw,26px);align-items:start}
+.mag figure{position:relative;overflow:hidden;background:var(--paper2)}
+.mag img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.mag figure:hover img{transform:scale(1.04)}
+.mag figcaption{margin-top:12px;font-family:var(--disp);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2)}
+.a1{aspect-ratio:1/1}.a45{aspect-ratio:4/5}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}
+.push{margin-top:clamp(40px,8vw,120px)}
+
+/* full-bleed spread */
+.spread{position:relative;height:clamp(340px,60vw,720px);overflow:hidden;background:var(--paper2)}
+.spread img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.spread .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 32px;display:flex;justify-content:space-between;gap:16px;color:#fff;font-family:var(--disp);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;background:linear-gradient(0deg,rgba(0,0,0,.4),transparent)}
+
+/* ---------- feature (class/shop) split ---------- */
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;border-top:1px solid var(--line)}
+.feat.rev .feat-txt{order:2}
+.feat-media{overflow:hidden;background:var(--paper2);min-height:420px}
+.feat-media img{width:100%;height:100%;object-fit:cover;min-height:420px}
+.feat-txt{padding:clamp(36px,5vw,80px);display:flex;flex-direction:column;justify-content:center}
+.feat-txt .lab{margin-bottom:20px}
+.feat-txt h3{font-family:var(--disp);font-weight:300;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.02em;line-height:1.02}
+.feat-txt h3 em{font-style:italic;font-weight:400}
+.feat-txt p{margin-top:20px;color:var(--ink2);font-size:1.02rem;line-height:1.75;max-width:420px}
+.feat-txt .acts{margin-top:34px;display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+
+/* ---------- about ---------- */
+.about{background:var(--paper2)}
+.about-in{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,5vw,72px);align-items:center}
+.about-txt h2{font-family:var(--disp);font-weight:300;font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.02em;line-height:1.12}
+.about-txt h2 em{font-style:italic;font-weight:400}
+.about-txt p{margin-top:22px;color:var(--ink2);font-size:1.04rem;line-height:1.85}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,20px)}
+.about-photos figure{overflow:hidden;background:var(--paper);aspect-ratio:4/5}
+.about-photos img{width:100%;height:100%;object-fit:cover}
+.about-photos figure:nth-child(2){margin-top:clamp(24px,5vw,60px)}
+
+/* ---------- class list ---------- */
+.crow{display:flex;align-items:baseline;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.crow:first-child{border-top:1px solid var(--line2)}
+.crow .cn{flex:1;min-width:220px;font-family:var(--disp);font-weight:400;font-size:clamp(1.05rem,1.9vw,1.45rem);letter-spacing:-.01em}
+.crow .cn small{display:block;font-family:var(--kr);font-size:.82rem;color:var(--ink2);margin-top:5px;letter-spacing:0}
+.crow .cp{font-family:var(--disp);font-weight:500;font-size:1rem;white-space:nowrap;min-width:96px;text-align:right}
+.crow .cp.muted{color:var(--ink2);font-weight:400}
+.crow .cbook{font-family:var(--disp);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:2px;white-space:nowrap}
+.crow .cbook:hover{color:var(--ink2)}
+.cnote{margin-top:26px;font-family:var(--kr);font-size:.86rem;color:var(--ink2);line-height:1.9}
+
+/* ---------- visit ---------- */
+.visit{background:var(--paper2)}
+.visit-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px);align-items:start}
+.vinfo .vrow{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.vinfo .vrow:first-child{border-top:1px solid var(--line2)}
+.vinfo .vk{font-family:var(--disp);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);width:88px;flex-shrink:0;padding-top:4px;line-height:1.4}
+.vinfo .vv{font-family:var(--kr);font-size:.97rem;color:var(--ink);line-height:1.7;min-width:0}
+.vinfo .vv .sub{color:var(--ink2);font-size:.88rem}
+.hours{display:flex;flex-direction:column;gap:5px}
+.hours span{display:flex;justify-content:space-between;gap:16px;font-size:.96rem}
+.hours span.today{color:#141414;font-weight:600}
+.hours span.off{color:var(--faint)}
+.visit-media{overflow:hidden;background:var(--paper);aspect-ratio:4/5}
+.visit-media img{width:100%;height:100%;object-fit:cover}
+@media(max-width:860px){.visit-in{grid-template-columns:1fr;gap:28px}}
+
+/* ---------- footer ---------- */
+footer{background:#141414;color:#fff;padding:clamp(56px,8vw,100px) 0 40px}
+.ft-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.ft-brand{font-family:var(--disp);font-weight:300;font-size:clamp(2.4rem,7vw,5rem);letter-spacing:-.02em;line-height:.9}
+.ft-cols{display:flex;gap:64px;flex-wrap:wrap}
+.ft-col h4{font-family:var(--disp);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:16px}
+.ft-col a{display:block;font-family:var(--disp);font-size:.95rem;color:rgba(255,255,255,.85);margin-bottom:10px;transition:color .2s}
+.ft-col a:hover{color:#fff}
+.ft-bot{margin-top:clamp(40px,7vw,80px);padding-top:22px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--disp);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+
+/* reveal */
+.rv{opacity:1}
+@media (min-width:861px){
+ html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+ html.js .rv.in{opacity:1;transform:none}
+}
+
+/* responsive */
+@media (max-width:860px){
+ .nav-lnk{display:none}
+ .burger{display:flex}
+ .hero-media{grid-template-columns:1fr}
+ .hero-media .small{display:none}
+ .feat{grid-template-columns:1fr}
+ .feat.rev .feat-txt{order:0}
+ .feat-media,.feat-media img{min-height:300px}
+ .about-in{grid-template-columns:1fr;gap:34px}
+ .c3,.c4,.c5{grid-column:span 6}.c6,.c7,.c8{grid-column:span 6}
+ .push{margin-top:0}
+}
+@media (max-width:520px){
+ .c3,.c4,.c5,.c6,.c7,.c8{grid-column:span 12}
+ .wrap{padding:0 22px}
+ .hero-sub{text-align:left}
+}
+a:focus-visible,button:focus-visible{outline:2px solid #141414;outline-offset:3px}
+footer a:focus-visible,.drawer a:focus-visible,.spread a:focus-visible{outline-color:#fff}
+@media (hover:none){.mag figure:hover img{transform:none}.btn:hover{transform:none}.arrow:hover{gap:8px}}
+</style>
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<script>document.documentElement.className+=' js';</script>
+</head>
+<body>
+<!-- ===== HEADER ===== -->
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top">obe.r</a>
+    <div class="nav-r">
+      <nav class="nav-lnk" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#classes">Classes</a>
+        <a href="#shop">Shop</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="ig-link" href="https://www.instagram.com/obe.r_official/" target="_blank" rel="noopener">Instagram</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <button class="dx" id="dx" aria-label="Close menu">&times;</button>
+  <a href="#work">Work</a>
+  <a href="#classes">Classes</a>
+  <a href="#shop">Shop</a>
+  <a href="#studio">Studio</a>
+  <a href="#visit">Visit</a>
+  <div class="dsoc">
+    <a href="https://www.instagram.com/obe.r_official/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://smartstore.naver.com/o_ber" target="_blank" rel="noopener">Shop</a>
+  </div>
+</div>
+
+<span id="top"></span>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <p class="idx">obe.r — ceramic studio · since 2009 · dongtan</p>
+        <h1>Coloured by<br>the <em>everyday.</em></h1>
+      </div>
+      <p class="hero-sub">A small ceramic studio making handmade tableware, one-day classes, and pieces made to be used.</p>
+    </div>
+    <div class="hero-media">
+      <figure class="big rv"><img src="ober-hero.webp" alt="A table of colourful handmade obe.r mugs" fetchpriority="high"></figure>
+      <figure class="small rv"><img src="ober-p01.webp" alt="A pale blue obe.r mug resting on its side" loading="lazy"></figure>
+    </div>
+    <div class="hero-cap">
+      <span>Handmade in Korea</span>
+      <span>Colour · Clay · Everyday</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORK ===== -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2><span class="lab"><span class="no">01</span>Work</span><br>Pieces, coloured<br>by <em>hand.</em></h2>
+      <p class="rt">Every cup, bowl and planter is thrown, glazed and finished by hand — so no two ever come out quite the same. Soft pastels, playful handles, glazes that shift in the light.</p>
+    </div>
+    <div class="mag">
+      <figure class="c4 a1 rv"><img src="ober-p02.webp" alt="Yellow and blue nub-handle mugs" loading="lazy"><figcaption>Nub-handle mugs — glazed</figcaption></figure>
+      <figure class="c4 a45 rv"><img src="ober-p04.webp" alt="Pastel mugs lined up in the light" loading="lazy"><figcaption>A morning line-up</figcaption></figure>
+      <figure class="c4 a1 rv"><img src="ober-p03.webp" alt="Lime green mug seen from above" loading="lazy"><figcaption>Lime, from above</figcaption></figure>
+      <figure class="c4 a1 rv"><img src="ober-brand1.webp" alt="Blush pink obe.r planter with stamped mark" loading="lazy"><figcaption>Stamped &amp; signed</figcaption></figure>
+      <figure class="c4 a1 rv"><img src="ober-glaze1.webp" alt="Reactive blue glaze mugs" loading="lazy"><figcaption>Reactive blue — one of a kind</figcaption></figure>
+      <figure class="c4 a1 rv"><img src="ober-plate1.webp" alt="Small plate with red dot pattern" loading="lazy"><figcaption>Dot plate</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPREAD 1 ===== -->
+<div class="spread rv">
+  <img src="ober-beach1.webp" alt="obe.r ceramics styled by the sea" loading="lazy">
+  <div class="cap"><span>By the sea</span><span>obe.r — summer set</span></div>
+</div>
+
+<!-- ===== WORK 2 ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="mag">
+      <figure class="c5 a45 rv"><img src="ober-plant1.webp" alt="Pink planter with a small cactus" loading="lazy"><figcaption>Planters for small things</figcaption></figure>
+      <figure class="c7 a1 rv"><img src="ober-p07.webp" alt="Rows of pastel mugs" loading="lazy"><figcaption>The full spectrum</figcaption></figure>
+      <figure class="c4 a45 rv push"><img src="ober-food1.webp" alt="Granola bowl in a handmade cup" loading="lazy"><figcaption>Made to be used</figcaption></figure>
+      <figure class="c4 a45 rv push"><img src="ober-food2.webp" alt="Yoghurt bowls in blue cups" loading="lazy"><figcaption>Breakfast, in colour</figcaption></figure>
+      <figure class="c4 a45 rv push"><img src="ober-food3.webp" alt="Granola in a reactive-glaze cup" loading="lazy"><figcaption>Everyday ritual</figcaption></figure>
+      <figure class="c4 a1 rv"><img src="ober-plant2.webp" alt="Pink and lime planters" loading="lazy"><figcaption>Blush &amp; lime</figcaption></figure>
+      <figure class="c4 a1 rv"><img src="ober-pink1.webp" alt="Pink cup with dried flowers" loading="lazy"><figcaption>Still life</figcaption></figure>
+      <figure class="c4 a1 rv"><img src="ober-glaze2.webp" alt="Blue reactive glaze cups with shells" loading="lazy"><figcaption>Ocean glaze</figcaption></figure>
+      <figure class="c4 a1 rv"><img src="ober-beach2.webp" alt="obe.r cup at the shore" loading="lazy"><figcaption>Summer, at the shore</figcaption></figure>
+      <figure class="c4 a45 rv"><img src="ober-brand2.webp" alt="Stamped clay pieces on the bench" loading="lazy"><figcaption>The obe.r stamp</figcaption></figure>
+      <figure class="c4 a45 rv"><img src="ober-p06.webp" alt="Blue mugs with matching spoons" loading="lazy"><figcaption>Cup &amp; spoon</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLASSES ===== -->
+<section class="feat" id="classes">
+  <div class="feat-media rv"><img src="ober-proc1.webp" alt="Hands trimming clay in the studio" loading="lazy"></div>
+  <div class="feat-txt rv">
+    <span class="lab"><span class="no">02</span>Classes</span>
+    <h3>Make your own,<br>from the <em>clay up.</em></h3>
+    <p>Led by a ceramic artist with 17 years of experience (since 2009), obe.r runs small, private classes near Dongtan Central Park — wheel throwing, hand-building and kids' classes — tuned to your level and pace. Not just an experience, but a piece you'll keep.</p>
+    <div class="acts">
+      <a class="btn btn-fill" href="https://m.booking.naver.com/booking/6/bizes/1450482?theme=place&amp;entry=pll&amp;lang=ko&amp;area=pll" target="_blank" rel="noopener">Book a class</a>
+      <a class="arrow" href="https://www.instagram.com/obe.r_official/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</section>
+<section class="sec" style="padding-top:clamp(48px,7vw,90px)">
+  <div class="wrap">
+    <div class="rv">
+      <div class="crow"><div class="cn">One-day · Wheel throwing<small>물레 원데이 클래스 · 90분 · 성인 · 커플 추천</small></div><div class="cp">₩70,000</div><a class="cbook" href="https://m.booking.naver.com/booking/6/bizes/1450482/items/6906698?area=pll&amp;entry=pll&amp;lang=ko&amp;theme=place" target="_blank" rel="noopener">Book</a></div>
+      <div class="crow"><div class="cn">One-day · Hand-building<small>핸드빌딩 원데이 클래스 · 90분 · 성인</small></div><div class="cp">₩70,000</div><a class="cbook" href="https://m.booking.naver.com/booking/6/bizes/1450482/items/6906720?area=pll&amp;entry=pll&amp;lang=ko&amp;theme=place" target="_blank" rel="noopener">Book</a></div>
+      <div class="crow"><div class="cn">Anniversary plate · painting<small>기념일 플레이트 · 90분 · 1인 1작품</small></div><div class="cp muted">Booking</div><a class="cbook" href="https://m.booking.naver.com/booking/6/bizes/1450482/items/7355710?area=pll&amp;entry=pll&amp;lang=ko&amp;theme=place" target="_blank" rel="noopener">Book</a></div>
+      <div class="crow"><div class="cn">Kids · One-day<small>키즈 원데이 클래스</small></div><div class="cp">₩50,000</div><a class="cbook" href="https://m.booking.naver.com/booking/6/bizes/1450482?theme=place&amp;entry=pll&amp;lang=ko&amp;area=pll" target="_blank" rel="noopener">Book</a></div>
+      <div class="crow"><div class="cn">Regular course · 4 sessions<small>정규 클래스 (4회)</small></div><div class="cp">₩280,000</div><a class="cbook" href="https://m.booking.naver.com/booking/6/bizes/1450482/items/6939370?area=pll&amp;entry=pll&amp;lang=ko&amp;theme=place" target="_blank" rel="noopener">Book</a></div>
+      <div class="crow"><div class="cn">Group &amp; commission<small>단체 수업 · 주문 제작 · 협업 문의</small></div><div class="cp muted">Inquiry</div><a class="cbook" href="https://m.booking.naver.com/booking/6/bizes/1450482/items/7716845?area=pll&amp;entry=pll&amp;lang=ko&amp;theme=place" target="_blank" rel="noopener">Book</a></div>
+      <p class="cnote">· 작품은 초벌·유약 소성을 포함해 약 4–6주 후 수령하실 수 있어요.&nbsp;&nbsp;· 소수 정예 프라이빗 수업으로 진행됩니다.&nbsp;&nbsp;· 방문 전 꼭 미리 연락 부탁드려요 :)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SHOP ===== -->
+<section class="feat rev" id="shop">
+  <div class="feat-media rv"><img src="ober-brand3.webp" alt="A blush obe.r piece with the studio stamp" loading="lazy"></div>
+  <div class="feat-txt rv">
+    <span class="lab"><span class="no">03</span>Shop</span>
+    <h3>Take a colour<br><em>home.</em></h3>
+    <p>Mugs, cups, plates and planters are released in small batches through our online shop. Each one is one of a kind — when a colour is gone, it's gone.</p>
+    <div class="acts">
+      <a class="btn btn-fill" href="https://smartstore.naver.com/o_ber" target="_blank" rel="noopener">Visit the shop</a>
+      <a class="arrow" href="https://smartstore.naver.com/o_ber" target="_blank" rel="noopener">Smart Store</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPREAD 2 ===== -->
+<div class="spread rv">
+  <img src="ober-beach3.webp" alt="obe.r ceramics styled on the sand" loading="lazy">
+  <div class="cap"><span>Everyday objects</span><span>obe.r — coloured by hand</span></div>
+</div>
+
+<!-- ===== STUDIO / ABOUT ===== -->
+<section class="sec about" id="studio">
+  <div class="wrap">
+    <div class="about-in">
+      <div class="about-txt rv">
+        <span class="lab"><span class="no">04</span>Studio</span>
+        <h2 style="margin-top:18px">A studio that<br>believes colour<br>belongs on the <em>table.</em></h2>
+        <p>obe.r began in 2009 with a simple idea — that the things we use every day should bring a little joy. Run by a ceramic artist trained through to a master's in ceramics, the studio works in small batches, keeps its hands in the clay, and lets each glaze do its own thing. The result is tableware that feels made, not manufactured.</p>
+      </div>
+      <div class="about-photos rv">
+        <figure><img src="ober-proc4.webp" alt="Rows of unglazed cups in the studio" loading="lazy"></figure>
+        <figure><img src="ober-proc2.webp" alt="Clay rings and molds on the workbench" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VISIT ===== -->
+<section class="sec visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2><span class="lab"><span class="no">05</span>Visit</span><br>Come by the <em>studio.</em></h2>
+      <p class="rt">A calm, small-group studio near Dongtan Central Park. Please give us a call before you visit.</p>
+    </div>
+    <div class="visit-in">
+      <div class="vinfo rv">
+        <div class="vrow"><div class="vk">Address</div><div class="vv">경기 화성시 동탄구 동탄하나3길 7-4, 1층<br><span class="sub">오베르 세라믹 스튜디오 · 능동 · 동탄인랜드교회 맞은편 건물 1층</span></div></div>
+        <div class="vrow"><div class="vk">Hours</div><div class="vv"><div class="hours" id="hours">
+          <span data-d="2"><span>Tue 화</span><span>10:30 – 21:00</span></span>
+          <span data-d="3"><span>Wed 수</span><span>10:30 – 21:00</span></span>
+          <span data-d="4"><span>Thu 목</span><span>10:30 – 21:00</span></span>
+          <span data-d="5"><span>Fri 금</span><span>10:30 – 21:00</span></span>
+          <span data-d="6"><span>Sat 토</span><span>10:00 – 16:00</span></span>
+          <span class="off" data-d="0"><span>Sun 일</span><span>Closed 휴무</span></span>
+          <span class="off" data-d="1"><span>Mon 월</span><span>Closed 휴무</span></span>
+        </div></div></div>
+        <div class="vrow"><div class="vk">Call</div><div class="vv"><a href="tel:0507-1427-9666">0507-1427-9666</a></div></div>
+        <div class="vrow"><div class="vk">Getting<br>here</div><div class="vv"><span class="sub">자차 — 건물 앞 공방 지정 주차공간 또는 도로변 주차. 대중교통 — 동탄역에서 택시 약 10분, 또는 동탄역(동측) 마을버스 H12 → 능동주공단지 하차 → 도보 2분.</span></div></div>
+        <a class="btn btn-fill" style="margin-top:26px" href="https://map.naver.com/p/entry/place/1930445885" target="_blank" rel="noopener">네이버 지도에서 보기</a>
+      </div>
+      <div class="visit-media rv"><img src="ober-p05.webp" alt="obe.r studio pieces on the shelf" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">obe.r</div>
+      <div class="ft-cols">
+        <div class="ft-col">
+          <h4>Explore</h4>
+          <a href="#work">Work</a>
+          <a href="#classes">Classes</a>
+          <a href="#shop">Shop</a>
+          <a href="#visit">Visit</a>
+        </div>
+        <div class="ft-col">
+          <h4>Connect</h4>
+          <a href="https://www.instagram.com/obe.r_official/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://smartstore.naver.com/o_ber" target="_blank" rel="noopener">Smart Store</a>
+          <a href="https://m.booking.naver.com/booking/6/bizes/1450482?theme=place&amp;entry=pll&amp;lang=ko&amp;area=pll" target="_blank" rel="noopener">Book a class</a>
+        </div>
+        <div class="ft-col">
+          <h4>Visit</h4>
+          <a href="https://map.naver.com/p/entry/place/1930445885" target="_blank" rel="noopener">경기 화성시 동탄하나3길 7-4, 1F</a>
+          <a href="tel:0507-1427-9666">0507-1427-9666</a>
+          <a href="#visit" style="color:rgba(255,255,255,.55)">Tue–Fri 10:30–21:00 · Sat 10:00–16:00</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 obe.r — ceramic studio</span>
+      <span>Handmade in Korea</span>
+    </div>
+  </div>
+</footer>
+
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<script>
+(function(){
+  var hdr=document.getElementById('hdr'),tick=false;
+  function sc(){if(tick)return;tick=true;requestAnimationFrame(function(){hdr.classList.toggle('scrolled',window.scrollY>40);tick=false;});}
+  window.addEventListener('scroll',sc,{passive:true});sc();
+  var b=document.getElementById('burger'),dr=document.getElementById('drawer'),dx=document.getElementById('dx');
+  function op(){dr.classList.add('open');b.setAttribute('aria-expanded','true');}
+  function cl(){dr.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',op);dx.addEventListener('click',cl);
+  dr.querySelectorAll('a').forEach(function(a){a.addEventListener('click',cl);});
+  try{var day=new Date().getDay();var el=document.querySelector('#hours [data-d="'+day+'"]');if(el)el.classList.add('today');}catch(e){}
+  if(window.matchMedia('(min-width:861px)').matches){
+    var els=[].slice.call(document.querySelectorAll('.rv'));
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el);});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},2200);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var t=document.querySelector(id);if(!t)return;e.preventDefault();var y=t.getBoundingClientRect().top+window.scrollY-66,st=window.scrollY,d=y-st,t0=null;
+    function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/640,1);var e2=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;window.scrollTo(0,st+d*e2);if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);});
+  });
+})();
+</script>
+</body>
+</html>
